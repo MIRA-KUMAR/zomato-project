@@ -1,0 +1,23 @@
+{
+  "name": "zomato-project",
+  "version": "1.0.0",
+  "description": "- Initialize nodejs project (npm init) - Import data from Dataset.csv to mongodb and es (scripts/import)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIRA-KUMAR/zomato-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MIRA-KUMAR/zomato-project/issues"
+  },
+  "homepage": "https://github.com/MIRA-KUMAR/zomato-project#readme",
+  "dependencies": {
+    "fast-csv": "^4.3.6",
+    "mongodb": "^4.3.1"
+  }
+}
