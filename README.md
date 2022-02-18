@@ -18,7 +18,8 @@
 
 ## Step 2
 
-- Import to es
+- Import to es 
+    - Bulk API => https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html
 - Start basic server
 
 ## Step 3

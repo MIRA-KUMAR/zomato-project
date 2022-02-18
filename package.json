@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MIRA-KUMAR/zomato-project#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "fast-csv": "^4.3.6",
     "mongodb": "^4.3.1"
   }

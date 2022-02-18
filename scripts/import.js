@@ -51,7 +51,7 @@ async function importData() {
             .flat()
             .filter((x, i, a) => a.indexOf(x) === i);
 
-        const uniqueDishes = data // [[1, 2, 3], 'Invalid Data'] => [1, 2, 3, 'Invalid Data']
+        const uniqueDishes = data
             .map((x) => x.topDishes)
             .flat()
             .filter((x, i, a) => a.indexOf(x) === i);
@@ -60,15 +60,6 @@ async function importData() {
             .map((x) => x.features)
             .flat()
             .filter((x, i, a) => a.indexOf(x) === i);
-
-        // const uniqueCusines = data.reduce((prev, curr) => {
-        //     curr.cuisine.forEach((cusine) => {
-        //         if (!prev.cusine) {
-        //             prev[cusine] = null;
-        //         }
-        //     });
-        //     return prev;
-        // }, {});
 
         const insertCusines = uniqueCusines.map((cusine) => {
             return {
