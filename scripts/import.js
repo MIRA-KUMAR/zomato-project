@@ -4,7 +4,7 @@ const csv = require('fast-csv');
 const { MongoClient, ObjectId } = require('mongodb');
 
 const readCsv = () => new Promise((resolve, reject) => {
-    const filePath = path.join(__dirname, '../Dataset.csv');
+    const filePath = path.join(__dirname, './Dataset.csv');
     const finalData = [];
     fs.createReadStream(filePath)
         .pipe(csv.parse({ headers: true }))
