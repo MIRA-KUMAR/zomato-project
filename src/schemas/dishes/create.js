@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
         res.send(error);
     }
     const DishModel = mongoose.model('Dish');
-    const newData = DishModel(value);
+    const newData = new DishModel(value);
     await newData.save();
 
     return res.send(newData);

@@ -3,6 +3,7 @@ const path = require('path');
 const csv = require('fast-csv');
 const { MongoClient, ObjectId } = require('mongodb');
 const axios = require('axios').default;
+const { error } = require('console');
 
 (async function main() {
     // crud operations
@@ -28,8 +29,7 @@ const axios = require('axios').default;
         'dishes': 'dish',
         'features': 'feature',
     }
-
-    const d = await Promise.all(
+  const d = await Promise.all(
         [
             'restaurants',
             'cuisines',
@@ -54,8 +54,10 @@ const axios = require('axios').default;
             return resp.data;
         })
     );
+    
 
-    console.log(d);
+    
+ console.log(d);
     // const restaurants = await RestaurantCollection.find({}).toArray();
 
     // bulk api
