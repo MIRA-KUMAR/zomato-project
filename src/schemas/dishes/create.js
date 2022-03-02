@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
     const {error, value} = schema.validate(req.body);
 
     if (error) {
-        res.send(error);
+        return res.send(error);
     }
     const DishModel = mongoose.model('Dish');
     const newData = new DishModel(value);
