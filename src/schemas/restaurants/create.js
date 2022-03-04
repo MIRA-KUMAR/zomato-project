@@ -17,5 +17,5 @@ module.exports = async (req, res) => {
     const newData = new RestaurantModel(value);
     await newData.save();
 
-    return res.send(newData);
+    return res.status(200).send(newData);
 }
