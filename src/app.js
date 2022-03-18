@@ -1,6 +1,7 @@
 const express = require('express'); // import
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 require('./models');
 
@@ -8,6 +9,9 @@ const routes = require('./routes');
 
 const app = express();
 
+app.use(cors({
+    origin: '*'
+}))
 app.use(express.json()); // middlewares
 app.use(morgan('dev')); // logs
 
