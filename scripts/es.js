@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('fast-csv');
 const { MongoClient, ObjectId } = require('mongodb');
-const axios = require('axios').default;
+const axios = require('axios');
 const { error } = require('console');
 
 (async function main() {
