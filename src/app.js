@@ -23,7 +23,7 @@ mongoose.connect('mongodb://localhost:27017/zomato', (err) => {
         process.exit(1);
     }
 
-    app.listen(3000, function () {
+    app.listen(3000, function () { // server, services
         console.log('Server started!');
     });
 });
