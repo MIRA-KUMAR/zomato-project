@@ -5,6 +5,8 @@ module.exports = async (req, res) => {
     const data = await RestaurantModel.aggregate([
         {
             $project: {
+                name: true,
+                location: true,
                 price: {
                     $divide: ['$price', 100]
                 },
