@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
         const dishIds = dishData.hits.hits.map(x => x._id);
 
         const { data } = await axios.post('http://localhost:9200/restaurant/_search', {
-            size: 100,
+            size: 10,
             query: {
                 bool: {
                     should: [
